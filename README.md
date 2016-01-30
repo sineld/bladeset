@@ -6,7 +6,7 @@ A very simple blade extension which allows variables to be set within blade temp
 
 This version is for Laravel 5.0.
 
-See master branch for latest release for Laravel.
+See master branch for latest release of Laravel.
 
 ### Usage Examples
 
