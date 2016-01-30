@@ -80,7 +80,7 @@ An example where setting and keeping track of a variable inside a template using
 Require this package in your `composer.json` and update composer. This will download the package.
 
 ```php
-"sineld/bladeset": "5.2"
+"sineld/bladeset": "5.2.*@dev"
 ```
 
 Update composer.
