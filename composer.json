@@ -1,0 +1,25 @@
+{
+    "name": "sineld/bladeset",
+    "description": "A very simple blade extension which allows variables to be set within blade templates.",
+    "homepage": "https://github.com/sineld/bladeset",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sinan Eldem",
+            "email": "sineld@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.0.*"
+    },
+    "support": {
+        "issues": "https://github.com/sineld/bladeset/issues"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "minimum-stability": "stable"
+}
