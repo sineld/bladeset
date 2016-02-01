@@ -2,6 +2,7 @@
 
 namespace Sineld\BladeSet;
 
+use Blade;
 use Illuminate\Support\ServiceProvider;
 
 class BladeSetServiceProvider extends ServiceProvider
@@ -20,8 +21,16 @@ class BladeSetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/bladeset.php';
-        $this->publishes([$configPath => config_path('bladeset.php')], 'config');
+        $config = __DIR__ . '/../config/bladeset.php';
+        $this->publishes([$config => config_path('bladeset.php')], 'config');
+        $this->mergeConfigFrom($config, 'bladeset');
+        $variables = $this->app['config']->get('bladeset.variables');
+
+        foreach ($variables as $variable) {
+            Blade::extend(function ($value) use ($variable) {
+                return preg_replace("/@{$variable}\(['\"](.*?)['\"]\,(.*)\)/", '<?php $$1 =$2; ?>', $value);
+            });
+        }
     }
 
     /**
@@ -31,18 +40,7 @@ class BladeSetServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $configPath = __DIR__ . '/../config/bladeset.php';
-        $this->mergeConfigFrom($configPath, 'bladeset');
-        $variables = $this->app['config']->get('bladeset.variables');
-        $blade     = $this->app['view']->getEngineResolver()->resolve('blade')->getCompiler();
-
-        foreach ($variables as $variable) {
-
-            $blade->extend(function ($value, $compiler) use ($variable) {
-                $value = preg_replace("/@{$variable}\(['\"](.*?)['\"]\,(.*)\)/", '<?php $$1 =$2; ?>', $value);
-                return $value;
-            });
-        }
+        //
     }
 
 }
