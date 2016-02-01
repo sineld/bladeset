@@ -77,19 +77,19 @@ An example where setting and keeping track of a variable inside a template using
 
 ### Installation
 
-Require this package in your `composer.json` and update composer. This will download the package.
+Require this package in your `composer.json`.
 
 ```php
 "sineld/bladeset": "5.2.*@dev"
 ```
 
-Update composer.
+Update composer. This will download the package.
 
 ```php
 composer update
 ```
 
-After updating composer, add the ServiceProvider to the providers array in `app/config/app.php`.
+Add the BladeSetServiceProvider to the providers array in `app/config/app.php`.
 
 ```php
 Sineld\BladeSet\BladeSetServiceProvider::class,
@@ -112,6 +112,6 @@ You can use this package under the [MIT license](http://opensource.org/licenses/
 
 ### Feedback
 
-If you have any questions, feature requests or constructive ctritcism then please get in touch.
+If you have any questions, feature requests or constructive criticism then please get in touch.
 
 Twitter - [@sineld](http://twitter.com/sineld)
