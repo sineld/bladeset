@@ -4,15 +4,13 @@
     "keywords": ["laravel", "blade", "bladeset", "template"],
     "homepage": "https://github.com/sineld/bladeset",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Sinan Eldem",
-            "email": "sineld@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Sinan Eldem",
+        "email": "sineld@gmail.com"
+    }],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.2.*"
+        "illuminate/support": "5.3.*"
     },
     "support": {
         "issues": "https://github.com/sineld/bladeset/issues"
