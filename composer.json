@@ -10,7 +10,7 @@
     }],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.2.*"
+        "illuminate/support": "^5.3"
     },
     "support": {
         "issues": "https://github.com/sineld/bladeset/issues"
