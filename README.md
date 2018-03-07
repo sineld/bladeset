@@ -4,7 +4,7 @@ This package is heavily inspirated from [alexdover/blade-set](https://github.com
 
 A very simple blade extension which allows variables to be set within blade templates.
 
-This version is for Laravel 5.3 and should work with latest version of Laravel, if don't please mail me.
+This version is for Laravel 5.6 and should work with latest version of Laravel, if don't please mail me.
 
 See master branch for latest release of Laravel.
 
@@ -80,7 +80,13 @@ An example where setting and keeping track of a variable inside a template using
 Require this package in your `composer.json`.
 
 ```php
-"sineld/bladeset": "^5.3"
+composer require sineld/bladeset
+```
+
+or
+
+```php
+"sineld/bladeset": "^5.6"
 ```
 
 Update composer. This will download the package.
@@ -89,7 +95,7 @@ Update composer. This will download the package.
 composer update
 ```
 
-Add the BladeSetServiceProvider to the providers array in `app/config/app.php`.
+Add the BladeSetServiceProvider to the providers array in `config/app.php` if your projects Laravel version is below 5.5. If you Laravel version is higher or equal to 5.5 you do not need to add the line below to `config/app.php` file because package auto discovery is available.
 
 ```php
 Sineld\BladeSet\BladeSetServiceProvider::class,
