@@ -77,13 +77,15 @@ An example where setting and keeping track of a variable inside a template using
 
 ### Installation
 
-Require this package in your `composer.json`.
+Run this command on terminal in your packages root:
 
 ```php
 composer require sineld/bladeset
 ```
 
 or
+
+Require this package in your `composer.json`:
 
 ```php
 "sineld/bladeset": "^5.6"
