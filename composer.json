@@ -19,5 +19,12 @@
         "classmap": [
             "src/"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sineld\\BladeSet\\BladeSetServiceProvider"
+            ]
+        }
     }
 }
