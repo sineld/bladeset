@@ -1,10 +1,10 @@
-## Laravel 5 Blade Variable Assign In Template
+## Laravel Blade Variable Assign In Template
 
 This package is heavily inspirated from [alexdover/blade-set](https://github.com/alexdover/blade-set) after [this discussion](https://github.com/laravel/framework/issues/4778).
 
 A very simple blade extension which allows variables to be set within blade templates.
 
-This version is for Laravel 6.0+ and should work with 6.x versions of Laravel, if don't please mail me.
+This versions is for Laravel v. 6-7 and should work with future versions of Laravel, if don't, please mail me.
 
 ### Usage Examples
 
