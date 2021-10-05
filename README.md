@@ -88,7 +88,7 @@ or
 Require this package in your `composer.json`:
 
 ```php
-"sineld/bladeset": "^5.6"
+"sineld/bladeset": "5.8"
 ```
 
 Update composer. This will download the package.
