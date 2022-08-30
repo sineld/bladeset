@@ -4,7 +4,7 @@ This package is heavily inspirated from [alexdover/blade-set](https://github.com
 
 A very simple blade extension which allows variables to be set within blade templates.
 
-This versions is for Laravel v. 5-6-7-8 and should work with future versions of Laravel, if don't, please mail me.
+This versions is for Laravel v. 5-6-7-8-9 and should work with future versions of Laravel, if don't, please mail me.
 
 ### Usage Examples
 
